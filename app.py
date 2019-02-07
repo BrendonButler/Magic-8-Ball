@@ -1,3 +1,5 @@
+import random
+
 responses = ["It is certain.", "It is decidedly so.", "Without a doubt.", "Yes, definitely.",
              "You may rely on it.", "As I see it, yes.", "Outlook good", "Yes.",
              "Signs point to yes.", "Reply hazy, try again.", "Ask again later.",
@@ -10,3 +12,4 @@ while True:
     question = input("\n> ")
     if question.lower() == "quit" or question.lower() == "exit":
         break
+    print(random.choice(responses))
