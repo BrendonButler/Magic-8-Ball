@@ -15,7 +15,9 @@ namespace Magic8Ball
                 Console.Write("What is your question?\r\n> ");
                 string input = Console.ReadLine();
                 if (input.ToLower().Equals("exit")) break;
+                Console.ForegroundColor = ConsoleColor.DarkGreen;
                 Console.WriteLine(GetResponse() + "\n");
+                Console.ResetColor();
             } while (true);
         }
 
